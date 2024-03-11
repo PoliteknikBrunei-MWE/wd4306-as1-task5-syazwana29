@@ -18,7 +18,7 @@ export const routes: Routes = [
       import('./offers/offers.page').then((m) => m.OffersPage),
   },
   {
-    path: 'tabs',
+    path: 'tab',
     component: TabsPage,
     children: [
       {
