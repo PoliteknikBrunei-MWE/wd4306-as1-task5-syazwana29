@@ -14,7 +14,11 @@ import { cart } from 'ionicons/icons';
 })
 export class PlaceDetailPage implements OnInit {
 
-  constructor() { }
+  constructor() {
+    addIcons({
+      cart,
+    });
+   }
 
   ngOnInit() {
   }
