@@ -11,6 +11,7 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class PlacesPage implements OnInit {
+places: any;
 
   constructor() { }
 
