@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { TabPage } from './tab/tab.page';
+import { TabsPage } from './tab/tab.page';
 
 export const routes: Routes = [
   {
@@ -11,13 +11,7 @@ export const routes: Routes = [
     path: 'auth',
     loadComponent: () => import('./auth/auth.page').then((m) => m.AuthPage),
   },
-  {
-    path: 'place-detail',
-    loadComponent: () =>
-      import('./places/place-detail/place-detail.page').then(
-        (m) => m.PlaceDetailPage
-      ),
-  },
+
   {
     path: 'offers',
     loadComponent: () =>
@@ -25,7 +19,7 @@ export const routes: Routes = [
   },
   {
     path: 'tabs',
-    component: TabPage,
+    component: TabsPage,
     children: [
       {
         path: 'places',
@@ -46,6 +40,6 @@ export const routes: Routes = [
   },
   {
     path: 'tab',
-    loadComponent: () => import('./tab/tab.page').then((m) => m.TabPage),
+    loadComponent: () => import('./tab/tab.page').then((m) => m.TabsPage),
   },
 ];
