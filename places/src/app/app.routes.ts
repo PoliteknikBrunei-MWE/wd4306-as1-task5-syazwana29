@@ -41,11 +41,11 @@ export const routes: Routes = [
   },
   {
     path: 'places',
-    redirectTo: '/tabs/places',
+    redirectTo: '/tab/places',
     pathMatch: 'full',
   },
   {
-    path: 'tabs',
+    path: 'tab',
     loadComponent: () => import('./tab/tab.page').then((m) => m.TabPage),
   },
 ];
