@@ -22,4 +22,8 @@ export const routes: Routes = [
     path: 'auth',
     loadComponent: () => import('./auth/auth.page').then( m => m.AuthPage)
   },
+  {
+    path: 'place-detail',
+    loadComponent: () => import('./places/place-detail/place-detail.page').then( m => m.PlaceDetailPage)
+  },
 ];
