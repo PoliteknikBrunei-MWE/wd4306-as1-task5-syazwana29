@@ -4,7 +4,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding" [fullscreen]="true">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
   <ion-header collapse="condense">
 
     <ion-list>
@@ -19,8 +20,9 @@
     </ion-list>
     </ion-header>
 
-    <ion-button color="primary" fill="clear" expand="full">Switch to Login</ion-button>
-    <ion-button color="primary" (click)="onLogin()" expand="block">Login</ion-button>
+    <ion-col size-md="6" offset-md="3"></ion-col>
+    <ion-button type="button" color="primary" fill="clear" expand="full">Switch to Login</ion-button>
+    <ion-button type="submit" color="primary" (click)="onLogin()" expand="block">Login</ion-button>
     <!-- <ion-toolbar>
       <ion-title size="large">Login</ion-title>
     </ion-toolbar>
@@ -38,4 +40,5 @@
       Login</ion-button>
     </ion-card-content>
   </ion-card> -->
+</form>
 </ion-content>
