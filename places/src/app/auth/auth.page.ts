@@ -12,6 +12,9 @@ import { RouterModule } from '@angular/router';
   imports: [IonicModule, CommonModule, FormsModule, RouterModule],
 })
 export class AuthPage implements OnInit {
+onLogin() {
+throw new Error('Method not implemented.');
+}
 
   constructor() { }
 
